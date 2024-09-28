@@ -61,21 +61,21 @@ Make sure you have the following installed:
    git clone https://github.com/your-username/Open-Lake-v1.git
    
 2. **Navigate to the project directory:**
-3. 
+   
    ```bash
    cd Open-Lake-v1
    
-4. **Install dependencies:**
-5. 
+3. **Install dependencies:**
+   
    ```bash
    npm install
    
-6. **Run the app locally:**
+4. **Run the app locally:**
 
    ```bash
    node app.js
    
-7. **Open your browser and navigate to:
+5. **Open your browser and navigate to:
    
    ```arduino
    http://localhost:3000
