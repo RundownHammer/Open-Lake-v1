@@ -1,0 +1,73 @@
+body{
+  font-family: "Roboto";
+  background-color: white;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+}
+
+.blogview{
+  width: 60vw;
+}
+
+.blogContent{
+  overflow-x: scroll;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-left: -125px;
+}
+
+.blogview h1{
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.blogview h4{
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(140, 138, 138);
+  letter-spacing: 1px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+.actionButtons{
+  padding-top: 60px;
+  padding-left: 60px;
+  width: 150px;
+  height: 200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+
+.actionButtons .button{
+  height: 56px;
+  width: 160px;
+  margin-bottom: 16px;
+  border: 2.5px solid black;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.actionButtons .button:hover{
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.actionButtons .button[name = "deletePost"]{
+  background-color: #FA7070;
+  border-radius: 1rem;
+  color: #FEFDED;
+}
+
+.actionButtons .button[name = "updatePost"]{
+  background-color: #3586ff;
+  border-radius: 1rem;
+  /* color: #FEFDED; */
+}

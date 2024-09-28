@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+  </head>
+
+<body>
+
+  <%- include("partials/header.ejs") %>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+
+<section>
+
+  <section class="nice">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <div class="heading">
+      <h1>Open <span>Lake</span></h1>
+      <h2>An open blog full of <span>Curiosity</span></h2>
+    </div>
+  </section>
+
+
+<% if (noOfBlogs !== 0) {%>
+  
+  <section class="blogSection">
+    <div class="createButton">
+      <div >
+        <svg xmlns="http://www.w3.org/2000/svg" height="78px" viewBox="0 -960 960 960" width="78px" fill="#e8eaed"><path d="M450-450H200v-60h250v-250h60v250h250v60H510v250h-60v-250Z"/></svg>
+      </div>  
+      <a href="/write" class="btn">Create Blog</a>
+    </div>
+
+    <div class="blogBody">
+      <h2>All written Blogs</h2>
+      <div class = "blogsContainer">
+        <% for( let i = 0; i < noOfBlogs; i++ ) { %>
+          <div class="blogcard">
+            <div>
+              <div>
+                <h1><%= allBlogData[i].firstLine %></h1>
+              </div>
+              <div>
+                <h4><%= allBlogData[i].after %></h4>
+              </div>
+            </div>
+            <div>
+              <ul class="special">
+                <li class="speciallinks"><a class="btn links" href=<%= titles[i].replace(/ /g, '') %>>Go To This →</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+
+        <% } %>
+      </div>
+    </div>
+  </section>
+<% } %>
+</section>
+<%- include("partials/footer.ejs") %>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

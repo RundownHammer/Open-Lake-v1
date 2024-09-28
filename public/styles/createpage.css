@@ -1,0 +1,56 @@
+body{
+  background-color: aliceblue;
+  font-family: "Roboto";
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea[name="blogTitle"]{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 50vw;
+  min-width: 50px;
+  border: 5px solid #3586ff;
+  border-radius: 0.8rem;
+}
+
+textarea[name="blogAuthor"]{
+  margin-bottom: 20px;
+
+  padding: 5px;
+  width: 50vw;
+  min-width: 50px;
+  border: 5px solid #3586ff;
+  border-radius: 0.8rem;
+}
+
+textarea[name="blogText"]{
+  margin-bottom: 20px;
+
+  padding: 5px;
+  width: 50vw;
+  min-width: 50px;
+  border: 5px solid #3586ff;
+  border-radius: 0.8rem;
+}
+
+input[type = "submit"]{
+  height: 56px;
+  width: 160px;
+  margin-bottom: 16px;
+  border: 2.5px solid black;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 1rem;
+  margin-top: 24px;
+}
+
+input[type = "submit"]:hover{
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
